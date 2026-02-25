@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- SM was here. Security check 3 of 3. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -312,9 +313,16 @@ P_water = (W_DC_total + W_existing_demand) / R_available
 <h2 style="border:none;padding:0;margin-top:0">Document Integrity</h2>
 <p style="font-size:14px;color:var(--dim)">This document contains no proprietary methods. Every number comes from a public source. Every calculation can be reproduced with a calculator and the cited documents. If any number is wrong, correct it publicly and cite your source.</p>
 <div class="hash">
-<span class="label">Blockchain Timestamp</span>
-<strong style="color:var(--bright)">Solana Blockhash:</strong> 74nsipihaAGQEgaWconTTkFk3NfAL3t1rBqu7ZUZmYcC<br>
-<strong style="color:var(--bright)">Block:</strong> <a href="https://solscan.io/block/402440412" style="color:var(--blue)" target="_blank" rel="noopener">402,440,412</a> &nbsp;(view on Solscan)
+<span class="label">SHA-256</span>
+662ac50b9631c5f314e00463148077a90196f55fc2721a2768dfd563d236f9e0
+</div>
+<div class="hash">
+<span class="label">Solana Blockchain Anchor</span>
+<strong style="color:var(--bright)">Block:</strong> <a href="https://solscan.io/block/402502148" style="color:var(--blue)" target="_blank" rel="noopener">402,502,148</a><br>
+<strong style="color:var(--bright)">Blockhash:</strong> 9a5oyqpxCZ1RqAxVV3HqWwtdAXTAEMRegvtr1VoLLHkg<br>
+<strong style="color:var(--bright)">Signature:</strong> <a href="https://solscan.io/tx/4QeesAfu8mUFUo6NqibShAntZLGedQ7nP55G1pfHZMdXQDAkTXALoXJDVM1bBTQDXKiLqf74iZR9C4nB995YbCWc" style="color:var(--blue)" target="_blank" rel="noopener">4QeesAfu8mUFUo6NqibShAntZLGedQ7nP55G1pfHZMdXQDAkTXALoXJDVM1bBTQDXKiLqf74iZR9C4nB995YbCWc</a><br>
+<strong style="color:var(--bright)">Memo:</strong> CS:662ac50b9631c5f314e00463148077a90196f55fc2721a2768dfd563d236f9e0<br>
+<strong style="color:var(--bright)">Timestamp:</strong> February 24, 2026
 </div>
 <div class="verify-section">
 <h4>How to verify this document has not been modified</h4>
@@ -322,9 +330,10 @@ P_water = (W_DC_total + W_existing_demand) / R_available
 <p><strong>What this means in plain language:</strong> if even a single character of this document were changed after publication, the fingerprint would no longer match. The blockchain record proves the content existed in this exact form at the time it was recorded.</p>
 <p><strong>To verify yourself:</strong></p>
 <ol>
-<li>Visit the block record at <a href="https://solscan.io/block/402440412" target="_blank" rel="noopener">solscan.io/block/402440412</a> &mdash; this is a public block explorer anyone can use, no account needed.</li>
-<li>Confirm the blockhash shown there matches: <span style="font-family:var(--mono);font-size:12px;color:var(--bright)">74nsipihaAGQEgaWconTTkFk3NfAL3t1rBqu7ZUZmYcC</span></li>
-<li>The block timestamp tells you when this record was created. The document cannot have been altered after that timestamp without the hash changing.</li>
+<li>Visit the transaction at <a href="https://solscan.io/tx/4QeesAfu8mUFUo6NqibShAntZLGedQ7nP55G1pfHZMdXQDAkTXALoXJDVM1bBTQDXKiLqf74iZR9C4nB995YbCWc" target="_blank" rel="noopener">solscan.io</a> &mdash; this is a public block explorer anyone can use, no account needed.</li>
+<li>Confirm the memo contains: <span style="font-family:var(--mono);font-size:12px;color:var(--bright)">CS:662ac50b9631c5f314e00463148077a90196f55fc2721a2768dfd563d236f9e0</span></li>
+<li>Compute <code style="background:var(--surface2);padding:2px 6px;border-radius:3px;font-size:12px">sha256sum</code> on the pre-anchor version of this file and compare to the hash above.</li>
+<li>The block timestamp proves the content existed in this exact form at the time it was recorded.</li>
 </ol>
 <p><strong>No cryptocurrency knowledge is needed.</strong> The blockchain is simply being used here as a public, tamper-proof timestamp &mdash; the same way you might use a postmark to prove when a letter was mailed.</p>
 </div>
